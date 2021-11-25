@@ -143,5 +143,15 @@
     "name": "s",
     "Precio": "2",
     "id": 29
+  },
+  {
+    "name": "alfajor",
+    "Precio": "40",
+    "id": 30
+  },
+  {
+    "name": "torta",
+    "Precio": "100",
+    "id": 31
   }
 ]

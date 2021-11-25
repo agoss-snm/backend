@@ -3,7 +3,7 @@ const ClassContainer = require("../container");
 
 const { Router } = express;
 const router = new Router();
-const Container = new ClassContainer("./productos.txt");
+const Container = new ClassContainer("./products.txt");
 
 router.use(express.json());
 router.use(express.urlencoded({ extended: false }));
