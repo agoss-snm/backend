@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/header'); -%>
+<style>
+  body{
+    background-color: rgb(255, 232, 98) !important;
+            }
+        </style>
+  <body>
+    <%- include('partials/navBar'); -%>
+
+    <div class="container contApp my-5">
+      <div class="container row justify-content-center">
+        <div class="col-auto">
+          <div class="card rounded" style="background-color: lightslategray;     width: 38rem" >
+            <h1 class="display-8 text-center my-2" style="color: rgb(182, 50, 112);">
+              Add a New Product!
+            </h1>
+            <div class="card-body">
+              <div class="m-2">
+                <form action="/api/products" method="POST">
+                  <div class="row g-3">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Name"
+                        aria-label="Name"
+                        name="name"
+                      />
+                    </div>
+                    <div class="col" >
+                      <input 
+                        type="text"
+                        class="form-control"
+                        placeholder="Price"
+                        aria-label="Last name"
+                        name="price"
+                      />
+                    </div>
+                  </div>
+                  <div class="col text-center">
+                    <button type="submit" class="btn mt-3" style="color: rgb(235, 22, 58); background-color: rgb(255, 184, 220);">
+                        Send
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-dark"><%- include('./partials/footer'); -%></div>
+  </body>
+</html>

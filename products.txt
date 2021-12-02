@@ -153,5 +153,10 @@
     "name": "torta",
     "Precio": "100",
     "id": 31
+  },
+  {
+    "name": "alfajor",
+    "price": "010",
+    "id": 32
   }
 ]
